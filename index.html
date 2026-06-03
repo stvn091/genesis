@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arcade — Gaming Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Arcade</h1>
+      <nav class="nav">
+        <a href="#games">Games</a>
+        <a href="#news">News</a>
+        <a href="#community">Community</a>
+        <button id="themeToggle" class="btn small">Dark</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>Play. Compete. Conquer.</h2>
+          <p>Curated indie and AAA picks, news, and community events — all in one place.</p>
+          <p class="cta">
+            <a class="btn" href="#games">Browse Games</a>
+            <a class="btn ghost" href="#news">Latest News</a>
+          </p>
+        </div>
+        <div class="hero-card">
+          <div class="game-shot" id="featuredShot">Featured Game</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="container section">
+      <h3>Featured Games</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb" data-src="https://via.placeholder.com/800x450?text=Game+1">Game 1</div>
+          <h4>Rift Runner</h4>
+          <p class="muted">Action • Single Player</p>
+        </article>
+        <article class="card">
+          <div class="thumb" data-src="https://via.placeholder.com/800x450?text=Game+2">Game 2</div>
+          <h4>Neon Drift</h4>
+          <p class="muted">Racing • Co-op</p>
+        </article>
+        <article class="card">
+          <div class="thumb" data-src="https://via.placeholder.com/800x450?text=Game+3">Game 3</div>
+          <h4>Mythic Tactics</h4>
+          <p class="muted">Strategy • Multiplayer</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" class="container section">
+      <h3>Latest News</h3>
+      <ul class="news-list">
+        <li><strong>Patch 1.2</strong> released for Rift Runner — new maps and balance fixes.</li>
+        <li><strong>Indie Spotlight</strong> — Neon Drift nominated for Soundtrack Award.</li>
+        <li><strong>Tournament</strong> sign-ups open for Mythic Tactics — prizes announced.</li>
+      </ul>
+    </section>
+
+    <section id="community" class="container section">
+      <h3>Join the Community</h3>
+      <p>Connect on forums, share clips, and find a squad.</p>
+      <form id="subscribe" class="subscribe">
+        <input type="email" placeholder="Your email" required />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Arcade — Built for gamers</small>
+      <div class="social">
+        <a href="#" aria-label="Discord">Discord</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
